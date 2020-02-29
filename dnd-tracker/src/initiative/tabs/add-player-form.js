@@ -1,0 +1,1 @@
+//goal create a form for the player, when player hits submit adds the info to an array of stuff
