@@ -1,4 +1,4 @@
 db.sqlite3
 config.py
 .idea
-__pycache__
+!**/__pycache__/
