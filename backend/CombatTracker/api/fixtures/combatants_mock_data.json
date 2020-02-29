@@ -1,0 +1,20 @@
+[
+  {
+    "model": "api.models",
+    "pk": 1,
+    "fields": {
+      "name": "Test Guy 1",
+      "max_hp": 124,
+      "ac": 16
+    }
+  },
+  {
+    "model": "api.models",
+    "pk": 2,
+    "fields": {
+      "name": "Test Guy 2",
+      "max_hp": 24,
+      "ac": 8
+    }
+  }
+]
