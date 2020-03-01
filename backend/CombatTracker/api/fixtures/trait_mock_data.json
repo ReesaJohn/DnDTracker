@@ -1,0 +1,10 @@
+[
+  {
+    "model": "api.trait",
+    "pk": 1,
+    "fields": {
+      "trait_name": "Magic Resistance",
+      "trait_description": "The Legendary Commoner has advantage on saving throws against magical effects."
+    }
+  }
+]

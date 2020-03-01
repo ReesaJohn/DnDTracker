@@ -38,7 +38,7 @@ class AlignmentSerializer(serializers.ModelSerializer):
     class Meta:
         model = Alignment
         fields = [
-            'lawfullness',
+            'lawfulness',
             'morality'
         ]
 
@@ -65,11 +65,13 @@ class SenseSerializer(serializers.ModelSerializer):
     class Meta:
         model = Sense
         fields = [
-            'sense'
+            'sense',
+            'range'
         ]
 
 
 class SkillSerializer(serializers.ModelSerializer):
+
     class Meta:
         model = Skill
         fields = [
@@ -98,9 +100,12 @@ class TraitSerializer(serializers.ModelSerializer):
 
 class CombatantSerializer(serializers.ModelSerializer):
     alignment = AlignmentSerializer(required=False)
+    speeds = SpeedsSerializer(required=False, many=True)
     ability_scores = AbilityScoreSerializer(required=False)
     skills = SkillSerializer(required=False, many=True)
     senses = SenseSerializer(required=False, many=True)
+    languages = LanguageSerializer(required=False, many=True)
+    traits = TraitSerializer(required=False, many=True)
     actions = ActionSerializer(required=False, many=True)
     reactions = ActionSerializer(required=False, many=True)
     legendary_actions = LegendaryActionSerializer(required=True, many=True)

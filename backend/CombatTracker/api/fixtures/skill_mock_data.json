@@ -1,0 +1,10 @@
+[
+  {
+    "model": "api.skill",
+    "pk": 1,
+    "fields": {
+      "skill": "SU",
+      "modifier": "+2"
+    }
+  }
+]

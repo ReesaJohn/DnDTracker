@@ -1,0 +1,23 @@
+[
+  {
+    "model": "api.combatant",
+    "pk": 1,
+    "fields": {
+      "name": "Legendary Commoner",
+      "alignment": 1,
+      "size": "M",
+      "ac": 16,
+      "max_hp": 100,
+      "speeds": [1],
+      "ability_scores": 1,
+      "skills": [1],
+      "senses": [1],
+      "languages": [1],
+      "traits": [1],
+      "actions": [1],
+      "reactions": [2],
+      "legendary_actions": [1],
+      "lair_actions": [3]
+    }
+  }
+]

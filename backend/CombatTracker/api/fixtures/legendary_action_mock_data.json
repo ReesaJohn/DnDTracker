@@ -1,0 +1,11 @@
+[
+  {
+    "model": "api.legendaryaction",
+    "pk": 1,
+    "fields": {
+      "action_name": "Yeet",
+      "action_description": "Yeets the dagger real hard like.",
+      "action_cost": 1
+    }
+  }
+]

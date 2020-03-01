@@ -1,0 +1,26 @@
+[
+  {
+    "model": "api.action",
+    "pk": 1,
+    "fields": {
+      "action_name": "Dagger",
+      "action_description": "Melee Weapon Attack: +2 to hit, reach 5ft., one target. Hit: 2 (1d4) piercing damage."
+    }
+  },
+  {
+    "model": "api.action",
+    "pk": 2,
+    "fields": {
+      "action_name": "Superior Shield",
+      "action_description": "The Legendary Commoner raises his shield, granting a +2 bonus to AC."
+    }
+  },
+  {
+    "model": "api.action",
+    "pk": 3,
+    "fields": {
+      "action_name": "Summon Woodland Creature",
+      "action_description": "Summons 8 wolves."
+    }
+  }
+]

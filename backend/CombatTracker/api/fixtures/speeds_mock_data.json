@@ -1,0 +1,10 @@
+[
+  {
+    "model": "api.speeds",
+    "pk": 1,
+    "fields": {
+      "type": "W",
+      "rate": 30
+    }
+  }
+]

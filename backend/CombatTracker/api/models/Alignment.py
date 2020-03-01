@@ -57,6 +57,8 @@ class Alignment(models.Model):
     morality = models.PositiveIntegerField(choices=MORALITY_CHOICES)
 
     def get_alignment(self):
+        if self.get_lawfulness() is self.get_morality():
+            return "True Neutral"
         return self.get_lawfulness() + " " + self.get_morality()
 
     def get_morality(self):

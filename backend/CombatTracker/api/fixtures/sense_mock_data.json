@@ -1,0 +1,10 @@
+[
+  {
+    "model": "api.sense",
+    "pk": 1,
+    "fields": {
+      "sense": "Truesight",
+      "range": 100
+    }
+  }
+]
