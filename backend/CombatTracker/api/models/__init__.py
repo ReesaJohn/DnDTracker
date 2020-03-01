@@ -1,5 +1,6 @@
 from .AbilityScores import AbilityScores
 from .Action import Action
+from .Alignment import Alignment
 from .Combatant import Combatant
 from .Language import Language
 from .LegendaryAction import LegendaryAction

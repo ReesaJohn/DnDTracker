@@ -2,26 +2,43 @@ from django.db import models
 from enum import Enum
 
 
-class SkillChoices(Enum):
-    AC = "Acrobatics"
-    AH = "Animal Handling"
-    AR = "Arcana"
-    AT = "Athletics"
-    DE = "Deception"
-    HI = "History"
-    INS = "Insight"
-    INT = "Intimidation"
-    INV = "Investigation"
-    ME = "Medicine"
-    NA = "Nature"
-    PERC = "Perception"
-    PERS = "Persuasion"
-    RE = "Religion"
-    SOH = "Sleight of Hand"
-    ST = "Stealth"
-    SU = "Survival"
-
-
 class Skill(models.Model):
-    skill = models.CharField(choices=[(tag, tag.value) for tag in SkillChoices])
+    ACROBATICS = 'AC'
+    ANIMAL_HANDLING = 'AH'
+    ARCANA = 'AC'
+    ATHLETICS = 'AT'
+    DECEPTION = 'DE'
+    HISTORY = 'HI'
+    INSIGHT = 'INS'
+    INTIMIDATION = 'INT'
+    INVESTIGATION = 'INV'
+    MEDICINE = 'ME'
+    NATURE = 'NA'
+    PERCEPTION = 'PERC'
+    PERSUASION = 'PERS'
+    RELIGION = 'RE'
+    SLEIGHT_OF_HAND = 'SOH'
+    STEALTH = 'ST'
+    SURVIVAL = 'SU'
+    SKILL_CHOICES = (
+        (ACROBATICS, "Acrobatics"),
+        (ANIMAL_HANDLING, "Animal Handling"),
+        (ARCANA, "Arcana"),
+        (ATHLETICS, "Athletics"),
+        (DECEPTION, "Deception"),
+        (HISTORY, "History"),
+        (INSIGHT, "Insight"),
+        (INTIMIDATION, "Intimidation"),
+        (INVESTIGATION, "Investigation"),
+        (MEDICINE, "Medicine"),
+        (NATURE, "Nature"),
+        (PERCEPTION, "Perception"),
+        (PERSUASION, "Persuasion"),
+        (RELIGION, "Religion"),
+        (SLEIGHT_OF_HAND, "Sleight of Hand"),
+        (STEALTH, "Stealth"),
+        (SURVIVAL, "Survival")
+    )
+
+    skill = models.TextField(choices=SKILL_CHOICES)
     modifier = models.IntegerField()

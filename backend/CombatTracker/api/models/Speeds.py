@@ -2,13 +2,17 @@ from django.db import models
 from enum import Enum
 
 
-class Speeds(Enum):
-    W = "walking"
-    F = "flying"
-    S = "swimming"
-    C = "climbing"
-
-
 class Speeds(models.Model):
-    type = models.CharField(choices=[(tag, tag.value) for tag in Speeds])
+    WALKING = 'W'
+    FLYING = 'F'
+    SWIMMING = 'S'
+    CLIMBING = 'C'
+    SPEED_CHOICES = (
+        (WALKING, 'walking'),
+        (FLYING, 'flying'),
+        (SWIMMING, 'swimming'),
+        (CLIMBING, 'climbing')
+    )
+
+    type = models.TextField(choices=SPEED_CHOICES)
     rate = models.PositiveIntegerField()
